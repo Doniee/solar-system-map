@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>The Solar System Cycle Trail</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	 <!-- <link rel="stylesheet" href="js/leaflet/leaflet.css" /> -->
+	<link rel="shortcut icon" href="favicon.ico">
+	 <link rel="stylesheet" href="css/normalize.css">
+     <link rel="stylesheet" href="css/main.css">
+     <link href='https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-locatecontrol/v0.24.0/L.Control.Locate.css' rel='stylesheet' />
+     <link href="css/lightbox.css" rel="stylesheet" />
+     <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+     <script src='https://api.tiles.mapbox.com/mapbox.js/v2.1.4/mapbox.js'></script>
+     <link href='https://api.tiles.mapbox.com/mapbox.js/v2.1.4/mapbox.css' rel='stylesheet' />
+     <link href='http://fonts.googleapis.com/css?family=Alegreya+Sans:400,500,700,900,400italic' rel='stylesheet' type='text/css'>
+     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+	<div id="map"></div>
+	<div class="title">
+		<h1>The Solar System Cycle Trail</h1><h3>Hop on your bicycle and visit all the planets in a miniature solar system</h3>
+		<img src="img/bike.svg">
+	</div>
+	<div class="button" id="locationList">Info</div>
+	<div id="modal" class="modalDialog">
+		<div id="modalContent" class="modalCont">
+			<i class="fa fa-times-circle fa-3x" id="close"></i>
+			<h2>The Solar System Scale Model</h2>
+			<ul>
+				<li>Located in the cities of Helsinki and Espoo, Finland.</li>
+				<li>Scale of the Solar System model is 1:1 000 000 000 (1 mm on the ground = 1 000 km in space).</li>
+				<li>Built in 1992, so Pluto is still included.</li>
+				<li>The locations have scale models of the Sun and all of the planets. The sizes of the models and their distances are all to scale.</li>
+				<li>The distance between Pluto and the Sun is 6.1 km. The diameter of the model of the Sun is 140 cm. The diameter of Pluto is only 2.2 mm.</li>
+				<li>The cycling trail is 25 km long.</li>
+				<li>The suggested trail is based on the bicycle paths shown in the Helsinki Metropolitan Cycling And Outdoor Map.
+			</ul>
+			<div id="planet-links">
+				<a id="The_Sun" href="#">The Sun</a>
+				<a id="Mercury" href="#">Mercury</a>
+				<a id="Venus" href="#">Venus</a>
+				<a id="Earth" href="#">Earth</a>
+				<a id="Mars" href="#">Mars</a>
+				<a id="Jupiter" href="#">Jupiter</a>
+				<a id="Saturn" href="#">Saturn</a>
+				<a id="Uranus" href="#">Uranus</a>
+				<a id="Neptune" href="#">Neptune</a>
+				<a id="Pluto" href="#">Pluto</a>
+			</div>	
+			<p id="reference">Planet images from <a href="http://hubblesite.org">HubbleSite</a>, <a href="http://www.jpl.nasa.gov/">JPL</a> and <a href="http://www.wwu.edu/">WWU</a>.</br> 
+				Images of the scale model from <a href="http://www.vihreatsylit.fi/?p=3040">Vihreät sylit</a>, <a href="http://kehvelit.net/aurinkokuntamalli.htm">Kehvelit</a> and <a href="https://fi.wikipedia.org/wiki/Pajamäen_aurinkokuntamalli">Wikipedia</a>. </br>
+				Solar system scale model information from <a href="http://www.ursa.fi/tahtitieteesta/aurinkokuntamalli.html">Ursa</a>.</p>
+		</div>
+	</div>
+	<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+	<script src="js/lightbox.min.js"></script>
+	<script src="js/leaflet/leaflet.js"></script>
+	<script src="js/plugins.js"></script>
+	<script src='https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-locatecontrol/v0.24.0/L.Control.Locate.js'></script>
+	<script src="js/main.js"></script>
+	<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. 
+	<script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X');ga('send','pageview');
+        </script>-->
+</body>
+</html>
